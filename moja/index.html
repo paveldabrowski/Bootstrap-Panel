@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a496f2e223.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+
+    <div class="panel row text-center justify-content-center">
+        <div class="panel-left col-2 d-flex flex-column align-items-center justify-content-center w-100">
+            <section class="datetime d-flex flex-column justify-content-center  w-100">
+                <div class="">
+                    <h4>Środa</h4>
+                    <p class="display-4">12:00</p>
+                    <h5 class="text-muted display-5">20/20/2021</h5>
+                </div>
+            </section>
+
+            <section class="menu d-flex flex-column w-100 justify-content-center">
+
+                <a class="active menu-item h-100 w-100 border rounded-lg mb-5" href="">
+                    <div class="p-5">
+                        <i class="fas fa-sliders-h"></i>
+                        <h3>Strona główna</h3>
+                    </div>
+                </a>
+
+                <a class="menu-item h-100 w-100 border rounded-lg mb-5" href="">
+                    <div class="p-5">
+                        <i class="far fa-comments"></i>
+                        <h3>Posty</h3>
+                    </div>
+                </a>
+
+                <a class="menu-item h-100 w-100 border rounded-lg mb-5" href="">
+                    <div class="p-5 ">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Użytkownicy</h3>
+                    </div>
+                </a>
+
+            </section>
+
+            <section class="footer d-flex flex-column justify-content-center w-100 mt-4">
+                <div class="">
+                    <h4>Diamond CMS</h4>                    
+                    <h5 class="text-muted display-5">&copy Copyright 2021 </h5>
+                </div>
+            </section>
+        </div>
+
+        <div class="panel-right col-10">
+
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
