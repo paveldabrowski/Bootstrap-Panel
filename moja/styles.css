@@ -34,7 +34,7 @@ body {
     background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
     border-top: 1px solid rgba(255, 255, 255, 0.301);
     border-right: 1px solid rgba(255, 255, 255, 0.301);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.301);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.301);
     border-radius: 0 15px 15px 0!important;
 }
 
@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px!important;    
+    border-radius: 15px!important;
     color: white;
 }
 
@@ -77,4 +77,38 @@ body {
 .menu-item h3 {
     padding-top: 1.5rem;
     text-transform: uppercase;
+}
+
+/* --------------------------- */
+
+.main-stats h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-stat-box {
+    height: 140px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 3s;
+}
+
+.main-stat-box:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.main-stat-box h3 {
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-stat-box p {
+    font-size: 1.2rem;
 }
