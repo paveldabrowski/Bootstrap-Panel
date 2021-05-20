@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a496f2e223.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+    <div class="panel">
+        <div class="row m-0 h-100">
+            <div class="col-2 p-0 px-4 panel-left">
+                <section class="date-box">
+                    <p class="day mb-0">Środa</p>
+                    <p class="time mb-0">12:00</p>
+                    <p class="date mb-0 text-muted">20/12/2012</p>
+                </section>
+
+                <section class="menu text-center">
+                    <a href="#" class="active">
+                        <div class="menu-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <p>strona główna</p>
+                        </div>
+                    </a>
+                    <a href="posts.html">
+                        <div class="menu-item">
+                            <i class="fas fa-comments"></i>
+                            <p>posty</p>
+                        </div>
+                    </a>
+                    <a href="users.html">
+                        <div class="menu-item">
+                            <i class="fas fa-user-friends"></i>
+                            <p>użytkownicy</p>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="info-box text-light text-center mt-3">
+                    <h3>Diamond CMS</h3>
+                    <p class="text-muted">&copy; Copyright 2020</p>
+                </section>
+
+
+
+            </div>
+
+
+            <div class="col-10 p-0 panel-right">
+                <div class="col-9 mt-5">
+                    <section class="main-stats py-4 px-5 text-light text-center">
+                        <h1 class="mb-5">główne statystyki</h1>
+                        <div class="row mb-5">
+                            <div class="col-4">
+                                <div class="main-stat-box p5 border">
+                                    <h3>postów</h3>
+                                    <p>łącznie: 4.250.120</p>
+                                    <p>w tym miesiącu: 125.703</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="main-stat-box p5 border">
+                                    <h3>tematów</h3>
+                                    <p>łącznie: 1.830.484 </p>
+                                    <p>w tym miesiącu: 35.230</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="main-stat-box p5 border">
+                                    <h3>użytkowników</h3>
+                                    <p>łącznie: 750.064</p>
+                                    <p>w tym miesiącu: 8.409</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chart" class="chart py-5 text-dark"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+         var options = {
+          series: [{
+          name: 'series1',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+          name: 'series2',
+          data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+          chart: {
+          height: 350,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+    </script>
+</body>
+
+</html>
