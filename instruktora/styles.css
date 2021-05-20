@@ -121,7 +121,6 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: background-color 3s;
-
 }
 
 .main-stat-box:hover {
@@ -137,4 +136,45 @@ body {
 
 .main-stat-box p {
     font-size: 1.2rem;
+}
+
+/* ----------------------- */
+
+.main-table h3 {
+    font-size: 2.6rem;
+    color: white;
+    font-weight: bold;
+}
+
+.main-table .table-dark {
+    background-color: transparent;
+}
+
+.main-table thead, .main-table .dropdown-item {
+    font-size: 1.4rem;
+}
+
+.main-table tbody {
+    font-size: 1.2rem;
+}
+
+.main-table .btn {
+    font-size: 1.6rem;
+}
+
+.main-table {
+    font-size: 1.3rem;
+}
+
+.page-link {
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: white;
+    transition: color .3s, background-color .30s;
+}
+
+.page-link:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, .08);
 }
