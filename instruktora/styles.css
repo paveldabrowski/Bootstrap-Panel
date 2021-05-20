@@ -96,7 +96,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.menu a:hover {
+.menu a:hover, .featured-post:hover {
     background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
 }
 
@@ -231,11 +231,11 @@ body {
     font-size: 1.6rem;
 }
 
-.monthly-stats .info {
+.monthly-stats .info, .featured-post .card-title {
     font-size: 1.8rem;
 }
 
-.monthly-stats .number {
+.monthly-stats .number .featured-post .card-body {
     font-size: 1.4rem;
 }
 
@@ -244,4 +244,32 @@ body {
 /*      posts      */
 
 /* --------------- */
+.posts h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+.featured-post .btn {
+    font-size: 1.6rem;
+}
+
+.active-users .card-img {
+    overflow: hidden; /*żeby obrazki nie wyciekały poza ramki*/
+}
+
+.active-users img {
+    height: 180px;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity  .3s, transform .3;
+}
+
+.active-users img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.active-users .card-body, .active-users .btn {
+    font-size: 1.5re;
+}
