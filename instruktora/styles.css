@@ -273,3 +273,20 @@ body {
 .active-users .card-body, .active-users .btn {
     font-size: 1.5re;
 }
+/* ---------------- -------*/
+
+.find-post,
+.find-post input,
+.find-post .btn,
+.find-post .dropdown-item {
+    font-size: 1.6rem;
+}
+
+/*--------------- Modal -------------*/
+.posts-modal p, .posts-modal .btn {
+    font-size: 1.3rem;
+}
+
+.posts-modal .modal-body .btn {
+    text-transform: uppercase;
+}
